@@ -8,14 +8,14 @@ import { Review } from './interfaces'
 export function showReviewTotal(value: number, reviewer: string, isLoyalty: LoyaltyUser): void {
     const iconDisplay = isLoyalty == LoyaltyUser.GOLD ? '⭐' : ''
     // reviewTotalDisplay.innerHTML = 'review total ' + value.toString() + '| last reviewed by ' + reviewer + ' ' + iconDisplay
-    reviewTotalDisplay.innerHTML = `${value.toString()} Review${makeMultiple(value)} Total | Last Reviewed by ${reviewer} ${iconDisplay}`
+    reviewTotalDisplay!.innerHTML = `${value.toString()} Review${makeMultiple(value)} Total | Last Reviewed by ${reviewer} ${iconDisplay}`
 }
 
 export function populateUser(isReturning: boolean, userName: string): void {
     if (isReturning == true) {
-        returningUserDisplay.innerHTML = 'back'
+        returningUserDisplay!.innerHTML = 'back'
     }
-    userNameDisplay.innerHTML = userName
+    userNameDisplay!.innerHTML = userName
 }
 
 export function makeMultiple(value: number): string {
