@@ -73,7 +73,7 @@ footer!.innerHTML = currentLocation[0] + ' ' + currentLocation[1] + ' ' + curren
 // Array of Properties
 const properties : Property[] = [
     {
-        image: 'src/images/colombia-property.jpg',
+        image: 'images/colombia-property.jpg',
         title: 'Colombian Shack',
         price: 45,
         location: {
@@ -86,7 +86,7 @@ const properties : Property[] = [
         isAvailable: true  
     },
     {
-        image: 'src/images/poland-property.jpg',
+        image: 'images/poland-property.jpg',
         title: 'Polish Cottage',
         price: 30,
         location: {
@@ -99,7 +99,7 @@ const properties : Property[] = [
         isAvailable: false 
     },
     {
-        image: 'src/images/london-property.jpg',
+        image: 'images/london-property.jpg',
         title: 'London Flat',
         price: 25,
         location: {
@@ -112,7 +112,7 @@ const properties : Property[] = [
         isAvailable: true
     },
     {
-        image: 'src/images/malaysian-property.jpg',
+        image: 'images/malaysian-property.jpg',
         title: 'Malia Hotel',
         price:  35,
         location: {
@@ -147,7 +147,7 @@ let yourMainProperty = new MainProperty(
             date: '12-04-2021'
         }
     ],
-    "src/images/italian-property.jpg",
+    "images/italian-property.jpg",
     "Italian House",
 )
 
